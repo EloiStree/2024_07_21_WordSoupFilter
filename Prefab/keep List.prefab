@@ -1,0 +1,161 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2306266788754481164
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5885733502541960539}
+  - component: {fileID: 7604299808081807070}
+  - component: {fileID: 8781882743678651006}
+  - component: {fileID: 7096299078275963790}
+  - component: {fileID: 8202989873194475818}
+  m_Layer: 0
+  m_Name: keep List
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5885733502541960539
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2306266788754481164}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7604299808081807070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2306266788754481164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edd3887134187614f88c712049c5520f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_target: {fileID: 8781882743678651006}
+  m_banList: []
+--- !u!114 &8781882743678651006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2306266788754481164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29aa770f5c8c9ac45bb64684a04a3c87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_list:
+    m_containedStrings: []
+--- !u!114 &7096299078275963790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2306266788754481164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ea89b1c139af2a42b8b31e7ae9668ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_text: 
+  m_onChange:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7604299808081807070}
+        m_TargetAssemblyTypeName: SoupStringListWrapperMono, Assembly-CSharp
+        m_MethodName: AppendWordsOnlyInTarget
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 7604299808081807070}
+        m_TargetAssemblyTypeName: SoupStringListWrapperMono, Assembly-CSharp
+        m_MethodName: SetToDefaultLowerCaseSoup
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: SoupStringListWrapperMono, Assembly-CSharp
+        m_MethodName: RemoveBanned
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+--- !u!114 &8202989873194475818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2306266788754481164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b353a9b08eadf4419f0600a7418bc43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_affected: {fileID: 8781882743678651006}
+  m_fileName: de27ca59-5965-46a1-9091-588da56b86ad
+  m_afterLoading:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7604299808081807070}
+        m_TargetAssemblyTypeName: SoupStringListWrapperMono, Assembly-CSharp
+        m_MethodName: SetToDefaultLowerCaseSoup
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+  m_beforeSaving:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7604299808081807070}
+        m_TargetAssemblyTypeName: SoupStringListWrapperMono, Assembly-CSharp
+        m_MethodName: SetToDefaultLowerCaseSoup
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1

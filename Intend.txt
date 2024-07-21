@@ -1,0 +1,1 @@
+I intend with this tool to be able to filter lot's of texts to build a list of words important to study.

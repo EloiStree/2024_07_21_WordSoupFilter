@@ -1,0 +1,23 @@
+
+{                                                                                
+  "name": "be.eloistree.wordsoupfilter",                              
+  "displayName": "Word soup filter",                        
+  "version": "0.0.1",                         
+  "unity": "2018.1",                             
+  "unityRelease": "",                             
+  "description": "This tool is use to filter words in a list soup in aim to find the important one to study in  mass amount of texts.",                         
+  "keywords": ["Script","Tool"],                       
+  "dependencies":{},     
+  "relatedPackages":{},     
+  "samples" : [],     
+  "author" : {
+"name":"Eloi Stree",
+"mail":"",
+"url":""},     
+  "repository":{
+"type":"Git",
+"url":"https://github.com/EloiStree/2024_07_21_WordSoupFilter.git",
+"footprint":"",
+"revision":""},     
+  "category": "Script"                   
+} 

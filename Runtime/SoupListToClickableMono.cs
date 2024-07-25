@@ -10,6 +10,7 @@ public class SoupListToClickableMono : MonoBehaviour
 
 
     public UnityEvent<string> m_onFlushWordsInClickable;
+    public UnityEvent<string> m_onListSizeRefresh;
 
     [ContextMenu("Load from list")]
     public void LoadElementOfList() {
@@ -17,6 +18,7 @@ public class SoupListToClickableMono : MonoBehaviour
         for (int i = 0; i < count; i++) {
             m_clickables[i].SetText(SoupStringListUtility.GetAtIndex(m_toLoad.m_list, i));
         }
+        m_onListSizeRefresh.Invoke(m_toLoad.m_list.m_containedStrings.Count.ToString());
     }
 
 

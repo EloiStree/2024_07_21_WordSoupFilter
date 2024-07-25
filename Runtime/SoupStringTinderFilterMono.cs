@@ -7,6 +7,7 @@ using UnityEngine.Events;
 public class SoupStringTinderFilterMono : MonoBehaviour
 {
 
+
     public SoupStringListMono m_toFilterList;
     public SoupStringListMono m_banList;
     public SoupStringListMono m_skipList;
@@ -16,6 +17,8 @@ public class SoupStringTinderFilterMono : MonoBehaviour
     public string m_currentWord;
     public UnityEvent<string> m_onCurrentFocusChanged;
     public UnityEvent<int > m_onLeftToFilterChanged;
+
+
 
     private void Start()
     {
@@ -54,7 +57,5 @@ public class SoupStringTinderFilterMono : MonoBehaviour
 
     }
 
-
-
-
+   
 }
